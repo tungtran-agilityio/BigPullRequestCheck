@@ -1,0 +1,25 @@
+name: "You Shall Not Pass!"
+author: "Tung Tran <hello@tung.dev>"
+description: "Block giant PRs, late‑Friday merges & direct pushes with style."
+branding:
+  icon: shield
+  color: red
+
+inputs:
+  max_loc:
+    description: "Maximum allowed changed lines before blocking (0 to disable)."
+    default: "500"
+    required: false
+  friday_cutoff:
+    description: "HH:MM (24h) – PRs opened on Friday after this time are nudged. Empty to disable."
+    required: false
+  enable_shame_log:
+    description: "Whether to maintain SHAME_LOG.md leaderboard."
+    default: "true"
+    required: false
+  allowlist:
+    description: "Comma‑separated GitHub usernames allowed to bypass push‑to‑main rule."
+    required: false
+runs:
+  using: "node20"
+  main: "index.js"

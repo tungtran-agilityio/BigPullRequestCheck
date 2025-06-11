@@ -1,0 +1,27 @@
+name: You Shall Not Pass!
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches: [main]
+
+jobs:
+  gatekeeper:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gandalf Gatekeeper 🧙‍♂️
+        uses: tungtran-vn/tungtran-agilityio/YouShallNotPass@latest
+        with:
+          max_loc: 500
+          friday_cutoff: "17:00"
+          enable_shame_log: true
+          allowlist: "dependabot[bot],renovate[bot]"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
