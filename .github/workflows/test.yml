@@ -16,8 +16,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Gandalf Gatekeeper 🧙‍♂️
-        uses: tungtran-agilityio/BigPullRequestCheck@v1
+      - name: Tung Gatekeeper 🧙‍♂️
+        uses: tungtran-agilityio/BigPullRequestCheck@latest
         with:
           max_loc: 500
           friday_cutoff: "17:00"
