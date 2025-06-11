@@ -1,4 +1,4 @@
-# YouShallNotPass
+# Big Pull Request Check
 
 A playful gatekeeper that blocks monster PRs and late‑Friday merges with a Gandalf GIF and a firm “You shall not pass!”.
 

@@ -1,5 +1,5 @@
 name: "You Shall Not Pass!"
-author: "Tung Tran <hello@tung.dev>"
+author: "Tung Tran <tung.tran@asnet.com.vn>"
 description: "Block giant PRs, late‑Friday merges & direct pushes with style."
 branding:
   icon: shield

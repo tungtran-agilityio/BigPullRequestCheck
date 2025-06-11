@@ -1,4 +1,4 @@
-name: You Shall Not Pass!
+name: Big Pull Request Check
 
 on:
   pull_request:
@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Gandalf Gatekeeper 🧙‍♂️
-        uses: tungtran-vn/tungtran-agilityio/YouShallNotPass@latest
+        uses: tungtran-vn/tungtran-agilityio/YouShallNotPass@v1
         with:
           max_loc: 500
           friday_cutoff: "17:00"
