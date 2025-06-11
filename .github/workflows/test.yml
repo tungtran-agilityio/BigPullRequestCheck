@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Tung Gatekeeper 🧙‍♂️
-        uses: tungtran-agilityio/BigPullRequestCheck@latest
+        uses: tungtran-agilityio/BigPullRequestCheck@v2
         with:
           max_loc: 500
           friday_cutoff: "17:00"
