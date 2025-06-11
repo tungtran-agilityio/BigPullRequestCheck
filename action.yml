@@ -1,4 +1,4 @@
-name: "You Shall Not Pass!"
+name: "Big Pull Request Check"
 author: "Tung Tran <tung.tran@asnet.com.vn>"
 description: "Block giant PRs, late‑Friday merges & direct pushes with style."
 branding:
