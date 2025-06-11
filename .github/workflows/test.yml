@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Gandalf Gatekeeper 🧙‍♂️
-        uses: tungtran-vn/tungtran-agilityio/YouShallNotPass@v1
+        uses: tungtran-vn/tungtran-agilityio/BigPullRequestCheck@v1
         with:
           max_loc: 500
           friday_cutoff: "17:00"
